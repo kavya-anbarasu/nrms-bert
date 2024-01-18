@@ -10,7 +10,7 @@ import torch
 from pytorch_lightning import seed_everything
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
-from pytorch_lightning.metrics.functional import auroc
+from torchmetrics.functional import auroc
 from pytorch_lightning.utilities import move_data_to_device
 from torch.optim import Adam
 from tqdm import tqdm

@@ -1,11 +1,10 @@
 import torch
 import torch.nn as nn
 from torch.nn import init
-from torch_geometric.utils import to_dense_batch
 from transformers import AutoModel
 
 from mind.main.batch import MINDBatch, ContentsEncoded
-
+from .patch import to_dense_batch
 
 def init_weights(m: nn.Module):
     if isinstance(m, nn.Embedding):
